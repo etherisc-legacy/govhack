@@ -184,7 +184,7 @@ contract SocialInsurance {
 		if (!isMember(_member) || _payout > maxPayout) {
 			throw;
 		}
-		if (members[_member].joinedAtBlock < block.number + WAIT_BLOCKS ) {
+		if (members[_member].joinedAtBlock + WAIT_BLOCKS > block.number) {
 			throw;
 		}
 		address spokesperson = members[_member].group_spokesperson;
