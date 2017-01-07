@@ -24,7 +24,7 @@ contract SocialInsurance {
 	uint8 public constant MAX_LEVEL = 4;
 	uint8 public constant LOCAL_LEVEL = 1;
 	uint8 public constant NONE = 0x0;
-	uint public constant WAIT_BLOCKS = 4 * 60 * 24 * 180; // blocks to wait till first payout
+	uint public constant WAIT_BLOCKS = 0; // could be 4 * 60 * 24 * 180; // blocks to wait till first payout
 
 
 	/**
@@ -128,6 +128,7 @@ contract SocialInsurance {
 		{
 			throw;
 		}
+		group.numberOfMembers++;
 		members[_member].group_spokesperson = msg.sender;
 		members[_member].joinedAtBlock = block.number;
 		group_members[msg.sender].push(_member);
@@ -180,7 +181,7 @@ contract SocialInsurance {
 	}
 
 	function payout(address _member, uint _payout) {
-		if (!isMember(_member)) {
+		if (!isMember(_member) || _payout > maxPayout) {
 			throw;
 		}
 		if (members[_member].joinedAtBlock < block.number + WAIT_BLOCKS ) {
@@ -192,9 +193,6 @@ contract SocialInsurance {
 		}
 		Peergroup group = groups[spokesperson];
 		uint actual_payout = propagatePayout(spokesperson, _payout);
-		if (actual_payout > maxPayout) {
-			throw;
-		}
 		if (!_member.send(actual_payout)) {
 			throw;
 		}
