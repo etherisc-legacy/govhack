@@ -24,6 +24,7 @@ contract SocialInsurance {
 	uint8 public constant MAX_LEVEL = 4;
 	uint8 public constant LOCAL_LEVEL = 1;
 	uint8 public constant NONE = 0x0;
+	uint public constant WAIT_BLOCKS = 4 * 60 * 24 * 180; // blocks to wait till first payout
 
 
 	/**
@@ -34,6 +35,9 @@ contract SocialInsurance {
 	struct Peergroup {
 		
 		address parentGroup;
+		string group_name;
+		string spokesperson_name;
+		string spokesperson_contact;
 		uint balance;
 		uint payouts;
 		uint8 level;
@@ -49,6 +53,7 @@ contract SocialInsurance {
 
 	struct Membership {
 		address group_spokesperson;
+		uint joinedAtBlock;
 		uint balance;
 		uint payouts;
 	}
@@ -66,15 +71,21 @@ contract SocialInsurance {
 		owner = msg.sender;
 	}
 
-	function createTopGroup (address _root_spokesperson) 
+	function createTopGroup (address _root_spokesperson, string _group_name, string _spokesperson_name, string _spokesperson_contact) 
 		onlyOwner {
-		Peergroup topgroup = groups[_root_spokesperson];
-		topgroup.parentGroup = _root_spokesperson;			// only in topgroup
-		topgroup.level = MAX_LEVEL;
+		if (rootSpokesperson != 0x0) {
+			throw;
+		}
+		Peergroup topGroup = groups[_root_spokesperson];
+		topGroup.parentGroup = _root_spokesperson;			// only in topGroup
+		topGroup.group_name = _group_name;
+		topGroup.spokesperson_name = _spokesperson_name;
+		topGroup.spokesperson_contact = _spokesperson_contact;
+		topGroup.level = MAX_LEVEL;
 		rootSpokesperson = _root_spokesperson;
 	}
 
-	function createGroup(address _spokesperson) {
+	function createGroup(address _spokesperson, string _group_name, string _spokesperson_name, string _spokesperson_contact) {
 		Peergroup group = groups[msg.sender];
 		// Sanity check:
 		if (group.parentGroup == NONE						// group doesn't exist
@@ -90,6 +101,9 @@ contract SocialInsurance {
 		}
 		childGroup.parentGroup = msg.sender;
 		childGroup.level = group.level - 1;
+		childGroup.group_name = _group_name;
+		childGroup.spokesperson_name = _spokesperson_name;
+		childGroup.spokesperson_contact = _spokesperson_contact;
 		group_members[msg.sender].push(_spokesperson);
 		// other fields don't need initialization.
 	}
@@ -99,9 +113,11 @@ contract SocialInsurance {
 		maxPayout = _new_maxPayout;
 	}
 
-	function isMember(address _member) returns (bool) {
+	function isMember(address _member) constant returns (bool) {
 		return members[_member].group_spokesperson != NONE;
 	}
+
+	
 
 	function admitMember (address _member) {
 		Peergroup group = groups[msg.sender];
@@ -113,6 +129,7 @@ contract SocialInsurance {
 			throw;
 		}
 		members[_member].group_spokesperson = msg.sender;
+		members[_member].joinedAtBlock = block.number;
 		group_members[msg.sender].push(_member);
 	} 
 
@@ -163,12 +180,21 @@ contract SocialInsurance {
 	}
 
 	function payout(address _member, uint _payout) {
+		if (!isMember(_member)) {
+			throw;
+		}
+		if (members[_member].joinedAtBlock < block.number + WAIT_BLOCKS ) {
+			throw;
+		}
 		address spokesperson = members[_member].group_spokesperson;
 		if (spokesperson != msg.sender) {
 			throw;
 		}
 		Peergroup group = groups[spokesperson];
 		uint actual_payout = propagatePayout(spokesperson, _payout);
+		if (actual_payout > maxPayout) {
+			throw;
+		}
 		if (!_member.send(actual_payout)) {
 			throw;
 		}
