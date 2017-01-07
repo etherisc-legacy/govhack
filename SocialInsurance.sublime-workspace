@@ -1,0 +1,651 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"Peerg",
+				"Peergroup"
+			],
+			[
+				"group",
+				"group_spokesperson"
+			],
+			[
+				"MA",
+				"MAX_LEVEL"
+			],
+			[
+				"M",
+				"MAGIC_NUMBER"
+			],
+			[
+				"pa",
+				"parentGroup"
+			],
+			[
+				"s",
+				"spokesperson"
+			],
+			[
+				"st",
+				"string"
+			],
+			[
+				"Pr",
+				"Process"
+			],
+			[
+				"Pro",
+				"ProcessTypes"
+			],
+			[
+				"Seq",
+				"SequenceFlowTypes"
+			],
+			[
+				"S",
+				"StartEvent"
+			],
+			[
+				"Flow",
+				"FlowNodeTypes"
+			],
+			[
+				"JSON",
+				"JSON_Name"
+			],
+			[
+				"tr",
+				"transform\tStyle CSS"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "contracts/SocialInsurance.sol",
+			"settings":
+			{
+				"buffer_size": 4504,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "test/metacoin.js",
+			"settings":
+			{
+				"buffer_size": 2234,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "test/SocialInsurance.js",
+			"settings":
+			{
+				"buffer_size": 1028,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "migrations/3_deploy_socialinsurance.js",
+			"settings":
+			{
+				"buffer_size": 77,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+		[
+			[
+				[
+					"Packages/Nodejs/Nodejs.sublime-build",
+					""
+				],
+				[
+					"Packages/User/JavaScript.sublime-build",
+					""
+				]
+			],
+			[
+				"Packages/User/JavaScript.sublime-build",
+				""
+			]
+		],
+		[
+			[
+				[
+					"Packages/PackageDev/Support/Convert to ....sublime-build",
+					""
+				],
+				[
+					"Packages/PackageDev/Support/Convert to ....sublime-build",
+					"JSON"
+				],
+				[
+					"Packages/PackageDev/Support/Convert to ....sublime-build",
+					"Property List"
+				],
+				[
+					"Packages/PackageDev/Support/Convert to ....sublime-build",
+					"YAML (Block Style)"
+				],
+				[
+					"Packages/PackageDev/Support/Convert to ....sublime-build",
+					"YAML (Default Style)"
+				]
+			],
+			[
+				"Packages/PackageDev/Support/Convert to ....sublime-build",
+				"Property List"
+			]
+		]
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"last_filter": "Package Control: ",
+		"selected_items":
+		[
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: s",
+				"Package Control: Install Package"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"",
+				"Bookmarks: Clear All"
+			]
+		],
+		"width": 432.0
+	},
+	"console":
+	{
+		"height": 51.0,
+		"history":
+		[
+			"fun a",
+			"5+3"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/C/Anwendungsdaten/chmu/owncloud-etherisc/Documents/christoph/Eigenes Projekt/Partner/UAE GovHack",
+		"/C/Anwendungsdaten/chmu/owncloud-etherisc/Documents/christoph/Eigenes Projekt/Partner/UAE GovHack/contracts",
+		"/C/Anwendungsdaten/chmu/owncloud-etherisc/Documents/christoph/Eigenes Projekt/Partner/UAE GovHack/frontend",
+		"/C/Anwendungsdaten/chmu/owncloud-etherisc/Documents/christoph/Eigenes Projekt/Partner/UAE GovHack/migrations",
+		"/C/Anwendungsdaten/chmu/owncloud-etherisc/Documents/christoph/Eigenes Projekt/Partner/UAE GovHack/test"
+	],
+	"file_history":
+	[
+		"/C/Anwendungsdaten/chmu/owncloud-etherisc/Documents/christoph/Eigenes Projekt/Partner/UAE GovHack/contract/socialinsurance.sol",
+		"/C/Anwendungsdaten/chmu/owncloud-etherisc/Documents/christoph/Eigenes Projekt/Partner/UAE GovHack/contracts/SocialInsurance.sol",
+		"/C/Users/chmu/AppData/Roaming/Sublime Text 3/Packages/User/casm.yaml",
+		"/C/Anwendungsdaten/chmu/owncloud-etherisc/Documents/christoph/BPMN/bpmn-mockup/contract/nutshell.js",
+		"/C/Anwendungsdaten/chmu/owncloud-etherisc/Documents/christoph/BPMN/bpmn-mockup/test.bpmn",
+		"/C/Anwendungsdaten/chmu/owncloud-etherisc/Documents/christoph/BPMN/bpmn-mockup/helloworld.json",
+		"/C/Anwendungsdaten/chmu/owncloud-etherisc/Documents/christoph/BPMN/bpmn-mockup/test.out",
+		"/C/Anwendungsdaten/chmu/owncloud-etherisc/Documents/christoph/BPMN/bpmn-mockup/contract/token.js",
+		"/C/Anwendungsdaten/chmu/owncloud-etherisc/Documents/christoph/BPMN/bpmn-mockup/contract/enums.js",
+		"/C/Anwendungsdaten/chmu/owncloud-etherisc/Documents/christoph/BPMN/bpmn-mockup/test/fixtures/test.json",
+		"/C/Anwendungsdaten/chmu/owncloud-etherisc/Documents/christoph/BPMN/bpmn-mockup/test/Test_BPMNTransform.js",
+		"/C/Anwendungsdaten/chmu/owncloud-etherisc/Documents/christoph/BPMN/bpmn-mockup/testsuite.js",
+		"/C/Anwendungsdaten/chmu/owncloud-etherisc/Documents/christoph/BPMN/bpmn-mockup/test.json",
+		"/C/Anwendungsdaten/chmu/owncloud-etherisc/Documents/christoph/BPMN/bpmn-mockup/test/fixtures/test.bpmn",
+		"/C/Anwendungsdaten/chmu/owncloud-etherisc/Documents/christoph/Eigenes Projekt/Partner/CaptainFrank/Cockpit/Compensation.json",
+		"/C/Anwendungsdaten/chmu/owncloud-etherisc/Documents/christoph/BPMN/bpmn-mockup/BPMNTransform.js",
+		"/C/Anwendungsdaten/chmu/owncloud-etherisc/Documents/christoph/BPMN/bpmn-mockup/sftp-config.json",
+		"/C/Anwendungsdaten/chmu/owncloud-etherisc/Documents/christoph/BPMN/bpmn-mockup/bpmn-mockup.js",
+		"/C/Anwendungsdaten/chmu/owncloud-etherisc/Documents/christoph/BPMN/bpmn-mockup/package.json",
+		"/C/Users/chmu/parity/ropsten.json",
+		"/C/Anwendungsdaten/chmu/owncloud-etherisc/Documents/christoph/BPMN/meteor-kitchen/server/collections/invoice_items.js",
+		"/C/Anwendungsdaten/chmu/owncloud-etherisc/Documents/christoph/BPMN/meteor-kitchen/client/views/user_settings/user_settings_controller.js",
+		"/C/Anwendungsdaten/chmu/owncloud-etherisc/Documents/christoph/BPMN/bpmn-mockup/test/BPMNTransform.js",
+		"/C/Anwendungsdaten/chmu/owncloud-etherisc/Documents/christoph/BPMN/e2ebridge/lib/rest.js",
+		"/C/Anwendungsdaten/chmu/owncloud-etherisc/Documents/christoph/BPMN/meteor-kitchen/server/collections/invoices.js",
+		"/C/Anwendungsdaten/chmu/owncloud-etherisc/Documents/christoph/BPMN/meteor-kitchen/server/collections/customers.js",
+		"/C/Anwendungsdaten/chmu/owncloud-etherisc/Documents/christoph/BPMN/meteor-kitchen/package.json",
+		"/C/Anwendungsdaten/chmu/owncloud-etherisc/Documents/christoph/BPMN/meteor-kitchen/server/publish/customers.js",
+		"/C/Anwendungsdaten/chmu/owncloud-etherisc/Documents/christoph/BPMN/meteor-kitchen/server/methods/customers.js",
+		"/C/Anwendungsdaten/chmu/owncloud-etherisc/Documents/christoph/BPMN/meteor-kitchen/server/controllers/router.js",
+		"/C/Anwendungsdaten/chmu/owncloud-etherisc/Documents/christoph/BPMN/meteor-kitchen/server/server.js",
+		"/C/Anwendungsdaten/chmu/owncloud-etherisc/Documents/christoph/BPMN/bpmn-mockup/node_modules/process-nextick-args/index.js",
+		"/C/Anwendungsdaten/chmu/owncloud-etherisc/Documents/christoph/BPMN/bpmn-mockup/node_modules/bpmn-moddle/test/integration/camunda/read.js",
+		"/C/Anwendungsdaten/chmu/owncloud-etherisc/Documents/christoph/BPMN/bpmn-mockup/node_modules/bpmn-moddle/test/expect.js",
+		"/C/Anwendungsdaten/chmu/owncloud-etherisc/Documents/christoph/BPMN/e2ebridge/jsdoc-settings.json",
+		"/C/Anwendungsdaten/chmu/owncloud-etherisc/Documents/christoph/BPMN/e2ebridge/conf.json",
+		"/C/Anwendungsdaten/chmu/owncloud-etherisc/Documents/christoph/BPMN/bpmn-mockup/.eslintrc.json",
+		"/C/Anwendungsdaten/chmu/owncloud-etherisc/Documents/christoph/BPMN/e2ebridge/test/server.js",
+		"/C/Anwendungsdaten/chmu/owncloud-etherisc/Documents/christoph/BPMN/e2ebridge/test/nodeunittraverse.js",
+		"/C/Anwendungsdaten/chmu/owncloud-etherisc/Documents/christoph/BPMN/bpmn-mockup/conf.json",
+		"/C/Anwendungsdaten/chmu/owncloud-etherisc/Documents/christoph/BPMN/bpmn-mockup/out/index.html",
+		"/C/Anwendungsdaten/chmu/owncloud-etherisc/Documents/christoph/BPMN/bpmn-mockup/jsdoc-settings.json",
+		"/C/Anwendungsdaten/chmu/owncloud-etherisc/Documents/christoph/sublime/sftp.json",
+		"/C/Anwendungsdaten/chmu/owncloud-etherisc/Documents/christoph/BPMN/e2ebridge/lib/timeouts.js",
+		"/C/Anwendungsdaten/chmu/owncloud-etherisc/Documents/christoph/BPMN/e2ebridge/coverage.bat",
+		"/C/Users/chmu/AppData/Roaming/Sublime Text 3/Packages/SideBarEnhancements/Side Bar.sublime-settings",
+		"/C/Users/chmu/AppData/Roaming/Sublime Text 3/Packages/SublimeLinter/SublimeLinter.sublime-settings",
+		"/C/Anwendungsdaten/chmu/owncloud-etherisc/Documents/christoph/BPMN/bpmn-mockup/node_modules/eslint/bin/eslint.js",
+		"/C/Anwendungsdaten/chmu/owncloud-etherisc/Documents/christoph/BPMN/e2ebridge/lib/state.js",
+		"/C/Anwendungsdaten/chmu/owncloud-etherisc/Documents/christoph/BPMN/bpmn-mockup/test2.bpmn",
+		"/C/Anwendungsdaten/chmu/owncloud-etherisc/Documents/christoph/BPMN/bpmn-mockup/test2.json",
+		"/C/Anwendungsdaten/chmu/owncloud-etherisc/Documents/christoph/BPMN/bpmn-mockup/xml2js.js",
+		"/C/Users/chmu/Desktop/hw.js",
+		"/C/Users/chmu/AppData/Roaming/Sublime Text 3/Packages/User/JavaScript.sublime-build",
+		"/C/Users/chmu/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/C/Users/chmu/AppData/Roaming/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
+		"/C/Anwendungsdaten/chmu/owncloud-etherisc/Documents/christoph/BPMN/e2ebridge/README.sublime-project"
+	],
+	"find":
+	{
+		"height": 21.0
+	},
+	"find_in_files":
+	{
+		"height": 90.0,
+		"where_history":
+		[
+			"<current file>"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": true,
+		"find_history":
+		[
+			"MAGIC_NUMBER",
+			"spokesPerson",
+			"magicNumber",
+			"groupOfJunior",
+			"groupOfElder",
+			"_junior",
+			"Participant",
+			"Dataoperat",
+			"exitcon",
+			"outputsetref",
+			"\\S {2,}\\S",
+			"([^\\t\\n])\\t",
+			"\\t ",
+			"  ",
+			"ProduceCompletion",
+			"Transistion",
+			"instanceTr",
+			"startoperation",
+			"6=",
+			"InstanceOperation",
+			"abstract\\s*\\nderived",
+			"The\\s*\\nderived",
+			"allSequenceFlows",
+			"([a-zA-Z]) derived",
+			"nodeName",
+			"×",
+			"\\/\\*([1-9]\\.)",
+			"\\*\\/\\s*\\n*\\*\\/\\s*",
+			"\\/\\*The",
+			"(?s)\\/\\*\\s*\\n*\\/\\*\\s*",
+			"(?s)([a-zA-Z]+\\s+\\:\\s+[a-zA-Z]+)\\s*\\n+(The controlled function)",
+			"(?s)([a-zA-Z]+\\s+\\:\\s+[a-zA-Z]+)\\s*\\n+(The monitored function)",
+			"(?s)([a-zA-Z]+\\s+\\:\\s+[a-zA-Z]+)\\s*\\n+(The shared function)",
+			"(?s)([a-zA-Z]+\\s+\\:\\s+[a-zA-Z]+)\\s*\\n+(\\/\\*\\s*\\nThe static function)",
+			"(?s)([a-zA-Z]+\\s+\\:\\s+[a-zA-Z]+)\\s*\\n*\\/\\*\\n*The static function",
+			"(?s)([a-zA-Z]+\\s+\\:\\s+[a-zA-Z]+)\\n+",
+			"(?s)^([a-zA-Z]+\\s+\\:\\s+[a-zA-Z]+)\\n+",
+			"/^([a-zA-Z]+\\s+\\:\\s+[a-zA-Z]+)/m",
+			"/^([a-zA-Z]+\\s+\\:\\s+[a-zA-Z]+)\\n*/m",
+			"/^([a-zA-Z]+\\s+\\:\\s+[a-zA-Z]+)\\n*(\\/\\*\\nThe static function)/m",
+			"^([a-zA-Z]+\\s+\\:\\s+[a-zA-Z]+)\\s*(\\/\\*\\nThe static function)",
+			"^([a-zA-Z]+\\s+\\:\\s+[a-zA-Z]+)\\n*(\\/\\*\\nThe static function)",
+			"^([a-zA-Z]+\\s+\\:\\s+[a-zA-Z]+)\\n+",
+			"^([a-zA-Z]+\\s+\\:\\s+[a-zA-Z]+)\\n+(\\/\\*\\nThe static function)",
+			"^([1-9]\\..*$)",
+			"^derived",
+			"The derived",
+			"[1-9]+[0-9]*\\s+Detailed ASM Ground Model",
+			"\\\"\\s*([a-zA-Z]+)\\s*\\\"",
+			"\\\"\\s*[a-zA-Z]+\\s*\\\"",
+			"\\\"\\s[a-zA-Z]+\\s\\\"",
+			"ScriptTas k",
+			"\\s([ek])\\s",
+			"\\s([e|k])\\s",
+			"\\s([e,k])\\s",
+			"\\s([ke])\\s",
+			"\\s([b-zB-Z])\\s",
+			" S ",
+			"\\s([b-zB-Z])\\s",
+			" A ",
+			"\\s([a-zA-Z])\\s",
+			"\\s([a-zA-Z])\\s([a-zA-Z])\\s",
+			"\\s([a-zA-Z])\\s([a-zA-Z])\\s([a-zA-Z])",
+			"\\s([a-zA-Z])\\s([a-zA-Z])\\s([a-zA-Z])\\s([a-zA-Z])",
+			"Detailed ASM Ground Model\\s*[1-9]+[0-9]*",
+			"\\f",
+			"\\\"\\s([a-zA-Z])\\s([a-zA-Z\\s]*)\\\"",
+			"\\\"\\s([a-zA-Z]+)\\s([a-zA-Z\\s]*)\\\"",
+			"\\\"\\s([a-zA-Z])\\s([a-zA-Z\\s]*)\\\"",
+			"Detailed ASM Ground Model\\s*[1-9]+[0-9]*",
+			"\\f",
+			"\"",
+			"([a-zA-Z])( )([a-zA-Z])( )([a-zA-Z])",
+			"\"",
+			"keys",
+			"Keys",
+			"keys",
+			"JSON_Name",
+			"\\\\"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": true,
+		"replace_history":
+		[
+			"MAX_MEMBERS",
+			"spokesperson",
+			"MAGIC_NUMBER",
+			"childGroup",
+			"parentGroup",
+			"spokesPerson",
+			"Member",
+			"$1 ",
+			"\\t",
+			"Transition",
+			"!=",
+			"abstract derived",
+			"The derived",
+			"$1\\nderived",
+			"*",
+			"/*\\n$1",
+			"*/\\n",
+			"/*\\nThe",
+			"/*",
+			"*/\\n$1\\n\\n/*$2",
+			"*/\\n$1\\n\\n$2",
+			"/*\\n$1\\n*/\\n",
+			"*/\\n\\nderived",
+			"*/\\nderived",
+			"/*\\nThe derived",
+			"",
+			"\"$1\"",
+			"$1$2$3$4",
+			"",
+			"\"$1$2\"",
+			"$1$2",
+			"",
+			"'",
+			"$1$3$5",
+			"'",
+			"/"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 2,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "contracts/SocialInsurance.sol",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4504,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1669,
+								1669
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/User/solidity_cm.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 702.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "test/metacoin.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2234,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								258,
+								258
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/JavaScriptNext - ES6 Syntax/JavaScriptNext.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "test/SocialInsurance.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1028,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								499,
+								499
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"open_with_edit": true,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/JavaScriptNext - ES6 Syntax/JavaScriptNext.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "migrations/3_deploy_socialinsurance.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 77,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								71,
+								71
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"open_with_edit": true,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/JavaScriptNext - ES6 Syntax/JavaScriptNext.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 21.0
+	},
+	"input":
+	{
+		"height": 43.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 148.0
+	},
+	"output.find_results":
+	{
+		"height": 138.0
+	},
+	"output.nodejs":
+	{
+		"height": 172.0
+	},
+	"output.package_dev":
+	{
+		"height": 24.0
+	},
+	"output.sftp":
+	{
+		"height": 48.0
+	},
+	"pinned_build_system": "",
+	"project": "SocialInsurance.sublime-project",
+	"replace":
+	{
+		"height": 62.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 750.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"C:\\Anwendungsdaten\\chmu\\owncloud-etherisc\\Documents\\christoph\\BPMN\\bpmn-mockup\\bpmn-mockup.sublime-project"
+			]
+		],
+		"width": 570.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 367.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
