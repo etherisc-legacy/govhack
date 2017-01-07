@@ -62,6 +62,8 @@ contract SocialInsurance {
 	address public rootSpokesperson; // spokesperson of top-level group
 
 	uint public maxPayout;
+	uint public premium_propagate_divisor;
+	uint public payouts_propagate_divisor;
 
 	mapping(address => Peergroup) public groups;					// mapping of spokespersons to groups
 	mapping(address => Membership) public members;					// mapping of members to spokespersons
@@ -69,6 +71,9 @@ contract SocialInsurance {
 
 	function SocialInsurance() {
 		owner = msg.sender;
+		maxPayout = 500 ether;
+		premium_propagate_divisor = 2;
+		payouts_propagate_divisor = 2;
 	}
 
 	function createTopGroup (address _root_spokesperson, string _group_name, string _spokesperson_name, string _spokesperson_contact) 
@@ -108,9 +113,11 @@ contract SocialInsurance {
 		// other fields don't need initialization.
 	}
 
-	function setMaxPayout(uint _new_maxPayout)
+	function setParameter(uint _new_maxPayout, uint _new_premium_propagate_divisor, uint _new_payouts_propagate_divisor)
 		onlyOwner {
 		maxPayout = _new_maxPayout;
+		premium_propagate_divisor = _new_premium_propagate_divisor;
+		payouts_propagate_divisor = _new_payouts_propagate_divisor;
 	}
 
 	function isMember(address _member) constant returns (bool) {
@@ -140,10 +147,10 @@ contract SocialInsurance {
 			group.balance += _premium;
 			return;
 		}
-		uint half = _premium / 2;
-		uint remain = _premium - half;
-		group.balance += half;
-		propagatePremium(group.parentGroup, remain);
+		uint remain = _premium / premium_propagate_divisor;
+		uint propagate = _premium - remain;
+		group.balance += remain;
+		propagatePremium(group.parentGroup, propagate);
 	}
 
 	function () payable {
@@ -167,15 +174,17 @@ contract SocialInsurance {
 				actual_payout = group.balance;
 			}
 			group.balance -= actual_payout;
+			group.payouts += actual_payout;
 			return actual_payout;
 		}
-		uint half = _payout / 2;
-		if (group.balance > half) {
-			actual_payout = half;
+		uint remain = _payout / payouts_propagate_divisor;
+		if (group.balance > remain) {
+			actual_payout = remain;
 		} else {
 			actual_payout = group.balance;
 		}
 		group.balance -= actual_payout;
+		group.payouts += actual_payout;
 		actual_payout = actual_payout + propagatePayout(group.parentGroup, _payout - actual_payout);
 		return actual_payout;
 	}
@@ -193,6 +202,7 @@ contract SocialInsurance {
 		}
 		Peergroup group = groups[spokesperson];
 		uint actual_payout = propagatePayout(spokesperson, _payout);
+		members[_member].payouts += actual_payout;
 		if (!_member.send(actual_payout)) {
 			throw;
 		}
